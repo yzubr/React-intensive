@@ -1,0 +1,10 @@
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px 40px;
+
+  img {
+    height: 50%;
+    width: 50%;
+  }
+}
