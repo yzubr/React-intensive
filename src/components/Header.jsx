@@ -1,7 +1,9 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, Link } from "react-router-dom"
 import styles from './Header.module.css'
 
-export default function Layout() {
+export default function Header() {
+
+
   return (
     <header className={styles.header}>
       <nav >
@@ -11,6 +13,7 @@ export default function Layout() {
           <li><NavLink to="/about">About us</NavLink></li>
         </ul>
       </nav>
+      <Link to="/signup">Sign up</Link>
     </header>
   )
 }

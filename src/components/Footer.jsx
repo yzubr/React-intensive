@@ -1,5 +1,5 @@
 export default function Layout() {
   return (
-    <h1>footer</h1>
+    <p>yzubr 2026</p>
   )
 }

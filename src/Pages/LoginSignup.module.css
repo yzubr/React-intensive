@@ -1,0 +1,42 @@
+.authform {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  gap: 24px;
+
+  & form {
+    display: flex;
+    flex-direction: column;
+
+    & input {
+      border: 1px solid;
+      opacity: 0px;
+      border-color: rgba(188, 187, 181, 1);
+      width: 320px;
+      height: 44px;
+      /* padding: 0 16px; */
+      margin: 6px 0 24px;
+      border-radius: 8px;
+
+      &:placeholder {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+        color: rgba(141, 141, 134, 1);
+      }
+
+    }
+    & button {
+      border: 1px solid;
+      opacity: 0px;
+      border-color: rgba(188, 187, 181, 1);
+      width: 320px;
+      height: 44px;
+      padding: 0 16px;
+      border-radius: 8px;
+    }
+
+
+
+  }
+}
