@@ -1,16 +1,22 @@
-import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { fetchCategories } from '../redux/features/categoriesSlice'
+import { Link } from 'react-router-dom'
 
 const Categories = () => {
-  const [categories, setCategories] = useState([]);
+
+  const dispatch = useDispatch();
+  const categories = useSelector(state => state.categories.list)
+  const status = useSelector((state) => state.categories.status)
+  const error = useSelector((state) => state.categories.error)
 
   useEffect(() => {
-    fetch('https://fakestoreapi.com/products/categories')
-      .then(response => response.json())
-      .then(data => {
-        setCategories(data);
-      })
-  }, []);
+    dispatch(fetchCategories())
+  }, [dispatch])
+
+  if (status === 'loading') return <p>Loading...</p>;
+  if (status === 'failed') return <p>Error: {error}</p>;
+
 
   return (
     <div>
