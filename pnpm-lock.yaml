@@ -11,6 +11,12 @@ importers:
       '@reduxjs/toolkit':
         specifier: ^2.12.0
         version: 2.12.0(react-redux@9.3.0(react@19.2.7)(redux@5.0.1))(react@19.2.7)
+      nanoid:
+        specifier: ^5.1.15
+        version: 5.1.15
+      normalize.css:
+        specifier: ^8.0.1
+        version: 8.0.1
       react:
         specifier: 19.2.7
         version: 19.2.7
@@ -288,6 +294,14 @@ packages:
     resolution: {integrity: sha512-ZB9RH/39qpq5Vu6Y+NmUaFhQR6pp+M2Xt76XBnEwDaGcVAqhlvxrl3B2bKS5D3NH3QR76v3aSrKaF/Kiy7lEtQ==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
+
+  nanoid@5.1.15:
+    resolution: {integrity: sha512-kBg3RpGtIe+RpTbyXwoI6pk5yD7KUiI3sygUqgeBMRst42KmhB4RZC7eiO9Wa1HIpaCCtpE2DJ6OI4Wi5ebwFw==}
+    engines: {node: ^18 || >=20}
+    hasBin: true
+
+  normalize.css@8.0.1:
+    resolution: {integrity: sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==}
 
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
@@ -588,6 +602,10 @@ snapshots:
       lightningcss-win32-x64-msvc: 1.32.0
 
   nanoid@3.3.12: {}
+
+  nanoid@5.1.15: {}
+
+  normalize.css@8.0.1: {}
 
   picocolors@1.1.1: {}
 
